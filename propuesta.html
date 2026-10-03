@@ -265,7 +265,9 @@
     padding-top: 1.1rem; font-weight: 600; color: var(--ink);
   }
   .planes tfoot td:first-child { color: var(--ink); font-weight: 500; }
-  .planes-nota { font-size: .82rem; margin-top: 1.2rem; }
+  .planes-nota { list-style: none; margin-top: 1.4rem; }
+  .planes-nota li { font-size: .82rem; line-height: 1.8; margin-bottom: .3rem; }
+  .planes-nota li::before { content: '—  '; color: var(--brass); }
   @media (max-width: 720px) {
     .planes { font-size: .8rem; }
     .planes th, .planes td { padding: .7rem .35rem; }
@@ -493,9 +495,12 @@
         </tr>
       </tfoot>
     </table>
-    <p class="planes-nota">Los precios de implementación son pago único en MXN. Las suscripciones de ManyChat se pagan directo al proveedor en USD
-    (~$14 y ~$29 USD/mes facturados anualmente). *Chat en el sitio: ~$360–860 MXN/mes con servicios como Chatbase/Tidio, o ~$40–190 MXN/mes a medida.
-    Meta no cobra las respuestas dentro de la conversación del cliente; solo plantillas de campañas salientes (~$0.03 USD c/u), opcionales.</p>
+    <ul class="planes-nota">
+      <li>La implementación es pago único en MXN.</li>
+      <li>Las suscripciones de ManyChat se pagan directo al proveedor en USD (~$14 y ~$29 USD/mes anuales).</li>
+      <li>*Chat en el sitio: ~$360–860 MXN/mes (Chatbase/Tidio) o ~$40–190 MXN/mes a medida.</li>
+      <li>Meta no cobra las respuestas dentro de la conversación del cliente; solo plantillas de campañas salientes (~$0.03 USD c/u), opcionales.</li>
+    </ul>
 
     <div class="fases">
       <div class="fase">
