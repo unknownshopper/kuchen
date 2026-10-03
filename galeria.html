@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio Küchen Studio — cocinas, cocinas de exterior, vestidores, closets y muebles a la medida. Villahermosa y Mérida.">
+<title>KÜCHEN — Proyectos</title>
+<link rel="icon" type="image/png" href="img/ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c1a17;
+    --paper: #f7f4ee;
+    --brass: #9a8264;
+    --light: #f5f1ea;
+    --hairline: rgba(28,26,23,.14);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.6rem 2rem;
+    z-index: 10;
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+    background: linear-gradient(to bottom, var(--paper) 55%, transparent);
+  }
+  nav a { color: var(--ink); text-decoration: none; opacity: .8; }
+  nav a:hover { opacity: 1; }
+  nav .brand img { height: 24px; display: block; }
+
+  /* ── cabecera ── */
+  .head {
+    padding: 8.5rem 2rem 2.5rem;
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 2rem; flex-wrap: wrap;
+  }
+  .head .k {
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--brass); display: block; margin-bottom: 1.2rem;
+  }
+  .head h1 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 700; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1;
+    letter-spacing: -.025em;
+  }
+  .head .total {
+    font-size: .68rem; letter-spacing: .26em; text-transform: uppercase;
+    color: var(--brass); padding-bottom: .4rem;
+  }
+
+  /* ── filtros ── */
+  .filtros {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--paper);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    padding: 1.1rem 2rem;
+    display: flex; gap: .6rem; flex-wrap: wrap;
+  }
+  .chip {
+    font-family: 'Inter', sans-serif;
+    font-size: .64rem; letter-spacing: .24em; text-transform: uppercase;
+    padding: .55rem 1.15rem;
+    border: 1px solid var(--hairline);
+    background: transparent; color: var(--ink);
+    cursor: pointer; border-radius: 999px;
+    transition: background .25s, color .25s, border-color .25s;
+  }
+  .chip:hover { border-color: var(--ink); }
+  .chip.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* ── grid de proyectos ── */
+  .proyectos {
+    max-width: 1200px; margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  @media (max-width: 900px) { .proyectos { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .proyectos { grid-template-columns: 1fr; } }
+
+  .proy {
+    position: relative; display: block; overflow: hidden;
+    aspect-ratio: 4/5; background: #e9e4da;
+    cursor: pointer; border: none; padding: 0; text-align: left;
+  }
+  .proy img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 1.2s cubic-bezier(.2,.6,.2,1);
+    background: #e9e4da;
+  }
+  .proy:hover img { transform: scale(1.05); }
+  .proy figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.2rem 1.4rem;
+    background: linear-gradient(to top, rgba(14,13,11,.7), transparent);
+    color: var(--light);
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  }
+  .proy .nombre {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.05rem; font-weight: 500; line-height: 1.2;
+  }
+  .proy .meta {
+    font-size: .6rem; letter-spacing: .22em; text-transform: uppercase;
+    opacity: .8; white-space: nowrap;
+  }
+
+  /* ── lightbox ── */
+  .lb {
+    position: fixed; inset: 0; z-index: 50;
+    background: rgba(14,13,11,.94);
+    display: none;
+    flex-direction: column;
+  }
+  .lb.open { display: flex; }
+  .lb-top {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.4rem 2rem;
+    color: var(--light);
+  }
+  .lb-titulo {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.2rem; font-weight: 600;
+  }
+  .lb-titulo .lb-rubro { display: block; font-family: 'Inter', sans-serif; font-size: .62rem; letter-spacing: .28em; text-transform: uppercase; opacity: .6; margin-top: .3rem; }
+  .lb-cerrar {
+    background: none; border: 1px solid rgba(245,241,234,.4); color: var(--light);
+    font-family: 'Inter', sans-serif; font-size: .62rem; letter-spacing: .28em; text-transform: uppercase;
+    padding: .7rem 1.3rem; cursor: pointer;
+  }
+  .lb-cerrar:hover { background: var(--light); color: var(--ink); }
+  .lb-main {
+    flex: 1; position: relative;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 0; padding: 0 4.5rem;
+  }
+  .lb-main img {
+    max-width: 100%; max-height: 100%;
+    object-fit: contain; display: block;
+  }
+  .lb-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: none; border: 1px solid rgba(245,241,234,.35); color: var(--light);
+    width: 3rem; height: 3rem; border-radius: 50%;
+    font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background .25s, color .25s;
+  }
+  .lb-nav:hover { background: var(--light); color: var(--ink); }
+  .lb-prev { left: 1.2rem; }
+  .lb-next { right: 1.2rem; }
+  .lb-count {
+    text-align: center; color: var(--light);
+    font-size: .65rem; letter-spacing: .3em;
+    padding: 1.2rem; opacity: .7;
+  }
+  @media (max-width: 640px) {
+    .lb-main { padding: 0 1rem; }
+    .lb-nav { width: 2.6rem; height: 2.6rem; }
+    .lb-prev { left: .6rem; } .lb-next { right: .6rem; }
+  }
+
+  footer {
+    padding: 2rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    font-size: .65rem; letter-spacing: .18em; text-transform: uppercase;
+    opacity: .5;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html" aria-label="Küchen Studio"><img src="img/logo-ink.png" alt="Küchen Studio"></a>
+  <a href="index.html#contacto">Contacto</a>
+</nav>
+
+<header class="head">
+  <div>
+    <span class="k">Portafolio</span>
+    <h1>Proyectos</h1>
+  </div>
+  <span class="total" id="total"></span>
+</header>
+
+<div class="filtros" id="filtros"></div>
+
+<main class="proyectos" id="grid"></main>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <div class="lb-top">
+    <div class="lb-titulo"><span id="lbName"></span><span class="lb-rubro" id="lbRubro"></span></div>
+    <button class="lb-cerrar" id="lbCerrar">Cerrar</button>
+  </div>
+  <div class="lb-main">
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">←</button>
+    <img id="lbImg" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">→</button>
+  </div>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<footer>
+  <span>© KÜCHEN</span>
+  <span>Villahermosa · Mérida</span>
+</footer>
+
+<script src="imagenes.js"></script>
+<script>
+const grid = document.getElementById('grid');
+const filtrosEl = document.getElementById('filtros');
+const totalEl = document.getElementById('total');
+
+// ── tarjetas: un proyecto = una tarjeta ──
+function tarjetas(rubro) {
+  const cards = rubro.proyectos.map(p => ({
+    titulo: p.nombre,
+    fotos: p.fotos,
+    rubro: rubro.rubro
+  }));
+  if (rubro.varios.length) {
+    cards.push({ titulo: 'Varios', fotos: rubro.varios, rubro: rubro.rubro });
+  }
+  return cards;
+}
+
+let activo = location.hash.slice(1) || 'todos';
+
+function renderFiltros() {
+  const chips = [{ slug: 'todos', rubro: 'Todos' }, ...KUCHEN_DATA];
+  filtrosEl.innerHTML = '';
+  chips.forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'chip' + (c.slug === activo ? ' on' : '');
+    b.textContent = c.rubro;
+    b.onclick = () => { location.hash = c.slug; };
+    filtrosEl.appendChild(b);
+  });
+}
+
+function renderGrid() {
+  grid.innerHTML = '';
+  let nFotos = 0;
+  KUCHEN_DATA
+    .filter(r => activo === 'todos' || r.slug === activo)
+    .forEach(r => tarjetas(r).forEach(card => {
+      nFotos += card.fotos.length;
+      const fig = document.createElement('figure');
+      fig.className = 'proy';
+      fig.innerHTML =
+        `<img src="${card.fotos[0]}" alt="${card.titulo}" loading="lazy">
+         <figcaption>
+           <span class="nombre">${card.titulo}</span>
+           <span class="meta">${card.fotos.length} foto${card.fotos.length === 1 ? '' : 's'}</span>
+         </figcaption>`;
+      fig.onclick = () => abrirLB(card);
+      grid.appendChild(fig);
+    }));
+  totalEl.textContent = `${nFotos} fotografías`;
+}
+
+// ── lightbox ──
+const lb = document.getElementById('lb');
+const lbImg = document.getElementById('lbImg');
+const lbName = document.getElementById('lbName');
+const lbRubro = document.getElementById('lbRubro');
+const lbCount = document.getElementById('lbCount');
+let lbFotos = [], lbIdx = 0;
+
+function abrirLB(card) {
+  lbFotos = card.fotos; lbIdx = 0;
+  lbName.textContent = card.titulo;
+  lbRubro.textContent = card.rubro;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  mostrar();
+}
+function cerrarLB() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  lbImg.src = '';
+}
+function mostrar() {
+  lbImg.src = lbFotos[lbIdx];
+  lbCount.textContent = `${lbIdx + 1} / ${lbFotos.length}`;
+  // precargar siguiente
+  const pre = new Image();
+  pre.src = lbFotos[(lbIdx + 1) % lbFotos.length];
+}
+function paso(d) {
+  lbIdx = (lbIdx + d + lbFotos.length) % lbFotos.length;
+  mostrar();
+}
+
+document.getElementById('lbCerrar').onclick = cerrarLB;
+document.getElementById('lbPrev').onclick = () => paso(-1);
+document.getElementById('lbNext').onclick = () => paso(1);
+lb.addEventListener('click', e => { if (e.target === lb) cerrarLB(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') cerrarLB();
+  if (e.key === 'ArrowLeft') paso(-1);
+  if (e.key === 'ArrowRight') paso(1);
+});
+
+// ── hash routing ──
+window.addEventListener('hashchange', () => {
+  const h = location.hash.slice(1);
+  activo = KUCHEN_DATA.some(r => r.slug === h) ? h : 'todos';
+  renderFiltros(); renderGrid();
+});
+
+if (!KUCHEN_DATA.some(r => r.slug === activo)) activo = 'todos';
+renderFiltros();
+renderGrid();
+</script>
+</body>
+</html>

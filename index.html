@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Küchen Studio — Cocinas de autor hechas a mano. Cocinas, vestidores, closets y muebles a la medida en Villahermosa, Tabasco y Mérida, Yucatán.">
+<meta property="og:title" content="KÜCHEN — Cocinas de autor">
+<meta property="og:description" content="Cocinas, vestidores y muebles a la medida. Showrooms en Villahermosa y Mérida.">
+<meta property="og:type" content="website">
+<title>KÜCHEN — Cocinas de autor</title>
+<link rel="icon" type="image/png" href="img/ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c1a17;
+    --paper: #f7f4ee;
+    --brass: #9a8264;
+    --light: #f5f1ea;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0e0d0b;
+    color: var(--light);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: 'Inter', -apple-system, sans-serif; }
+
+  /* ── nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.6rem 2rem;
+    z-index: 10;
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+  }
+  nav a { color: var(--light); text-decoration: none; opacity: .8; }
+  nav a:hover { opacity: 1; }
+  nav .links { display: flex; gap: 1.6rem; align-items: center; }
+  .nav-logo img {
+    height: 26px; display: block;
+    filter: drop-shadow(0 1px 8px rgba(0,0,0,.45));
+  }
+  .nav-logo { opacity: 0; pointer-events: none; transition: opacity .45s ease; }
+  body.scrolled .nav-logo { opacity: 1; pointer-events: auto; }
+
+  /* ── hero ── */
+  .hero {
+    height: 100svh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .hero > img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.6s ease;
+  }
+  .hero > img.on {
+    opacity: 1;
+    animation: slow-zoom 24s ease-out forwards;
+  }
+  @keyframes slow-zoom {
+    from { transform: scale(1.08); }
+    to   { transform: scale(1); }
+  }
+  .hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(14,13,11,.3), rgba(14,13,11,0) 35%, rgba(14,13,11,.78));
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    width: 100%;
+    padding: 0 2rem 4.5rem;
+    text-align: center;
+  }
+  .hero-logo {
+    width: clamp(230px, 42vw, 430px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 18px rgba(0,0,0,.45));
+  }
+  .tagline {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-style: italic;
+    font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+    opacity: .85;
+    margin-top: 1rem;
+  }
+  .cta-row {
+    margin-top: 2.6rem;
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  }
+  .cta {
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+    padding: 1rem 2.4rem;
+    border: 1px solid rgba(245,241,234,.55);
+    color: var(--light); text-decoration: none;
+    transition: background .3s, color .3s;
+  }
+  .cta:hover { background: var(--light); color: var(--ink); }
+  .cta.solid { background: var(--light); color: var(--ink); border-color: var(--light); }
+
+  .scroll-hint {
+    position: absolute; bottom: 1.4rem; left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: var(--light); opacity: .65;
+  }
+  .scroll-hint svg {
+    display: block;
+    animation: hint-bounce 3s ease-in-out infinite;
+  }
+  @keyframes hint-bounce {
+    0%, 55%, 100% { transform: translateY(0); }
+    70% { transform: translateY(7px); }
+    82% { transform: translateY(0); }
+  }
+
+  /* ── manifiesto ── */
+  .manifesto {
+    background: var(--paper); color: var(--ink);
+    padding: 7rem 2rem;
+    text-align: center;
+  }
+  .manifesto .k {
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--brass); display: block; margin-bottom: 1.6rem;
+  }
+  .manifesto p {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+    font-weight: 500;
+    letter-spacing: -.015em;
+    line-height: 1.35;
+    max-width: 26ch;
+    margin: 0 auto;
+  }
+
+  /* ── proyectos ── */
+  .proyectos { background: var(--paper); color: var(--ink); padding: 0 2rem 7rem; }
+  .proyectos-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 1px solid rgba(28,26,23,.15);
+    padding-top: 2.5rem;
+    max-width: 1200px; margin: 0 auto 3rem;
+  }
+  .proyectos-head h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: -.02em;
+  }
+  .proyectos-head span {
+    font-size: .68rem; letter-spacing: .26em; text-transform: uppercase; color: var(--brass);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px; margin: 0 auto;
+  }
+  .obra { position: relative; overflow: hidden; display: block; }
+  .obra img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 1.2s cubic-bezier(.2,.6,.2,1);
+  }
+  .obra:hover img { transform: scale(1.05); }
+  .obra figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.2rem 1.4rem;
+    background: linear-gradient(to top, rgba(14,13,11,.65), transparent);
+    color: var(--light);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .obra figcaption .nombre {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.15rem; font-weight: 500;
+  }
+  .obra figcaption .lugar {
+    font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; opacity: .8;
+  }
+  .obra-1 { grid-column: span 7; aspect-ratio: 16/10; }
+  .obra-2 { grid-column: span 5; aspect-ratio: 16/10; }
+  .obra-3 { grid-column: span 5; aspect-ratio: 4/5; }
+  .obra-4 { grid-column: span 7; aspect-ratio: 4/5; }
+  .obra-5 { grid-column: span 4; aspect-ratio: 4/5; }
+  .obra-6 { grid-column: span 4; aspect-ratio: 4/5; }
+  .obra-7 { grid-column: span 4; aspect-ratio: 4/5; }
+  @media (max-width: 700px) {
+    .obra-1, .obra-2, .obra-3, .obra-4, .obra-5, .obra-6, .obra-7 { grid-column: span 12; aspect-ratio: 4/5; }
+  }
+
+  /* ── contacto ── */
+  .contacto {
+    padding: 7rem 2rem;
+    text-align: center;
+    background: #0e0d0b;
+  }
+  .contacto .k {
+    font-size: .68rem; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--brass); display: block; margin-bottom: 1.6rem;
+  }
+  .contacto h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 600; font-size: clamp(1.9rem, 5vw, 3rem);
+    letter-spacing: -.02em;
+    max-width: 20ch; margin: 0 auto 2.6rem; line-height: 1.25;
+  }
+  .sucursales {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 420px));
+    gap: 3rem;
+    justify-content: center;
+    margin: 3.5rem auto 4rem;
+    text-align: left;
+  }
+  @media (max-width: 700px) { .sucursales { grid-template-columns: 1fr; gap: 2.5rem; } }
+  .suc {
+    border-top: 1px solid rgba(245,241,234,.2);
+    padding-top: 1.8rem;
+  }
+  .suc h3 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 600; font-size: 1.5rem; margin-bottom: .2rem;
+  }
+  .suc .estado {
+    font-size: .62rem; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--brass); display: block; margin-bottom: 1.4rem;
+  }
+  .suc p {
+    font-size: .92rem; line-height: 1.8; opacity: .85;
+    max-width: none;
+  }
+  .suc .dato {
+    display: block; margin-top: 1.2rem;
+    font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;
+  }
+  .suc .dato b { font-weight: 400; color: var(--brass); margin-right: .8rem; }
+  .suc a { color: var(--light); text-decoration: none; border-bottom: 1px solid rgba(245,241,234,.35); }
+  .suc a:hover { border-color: var(--light); }
+  footer {
+    padding: 2rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    font-size: .65rem; letter-spacing: .18em; text-transform: uppercase;
+    opacity: .5;
+    background: #0e0d0b;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html" aria-label="Küchen Studio">
+    <img src="img/logo-color.png" alt="Küchen Studio">
+  </a>
+  <div class="links">
+    <a href="galeria.html">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="on" src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AI2VOG5lGHEi99ZEIYhDum0/COCINAS/210417%20FEUD/PHOTO-2021-04-16-18-52-24-1.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocina KÜCHEN">
+  <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEHuRpMYLHXpts95oByHOJ8/COCINAS%20DE%20EXTERIOR/191006%20JORGE/5456ac87-6683-4427-ab14-63de8612508f.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocina de exterior KÜCHEN" loading="lazy">
+  <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALQVbGv2vPSfRBlHAxdQQmM/COCINAS/260827%20ABS/PHOTO-2026-08-27-13-34-26%202.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocina KÜCHEN" loading="lazy">
+  <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJsG6AqXzdH9wzU0zk-p7sA/COCINAS/180605%20CORDOBA/IMG_1482.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Detalle de cocina KÜCHEN" loading="lazy">
+  <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGeoZeUdeKQ0GgtjzRSwVRg/VESTIDORES/160621%20RH%20-%20CENDRA%20ESCANDINAVA/IMG_2499.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Vestidor KÜCHEN" loading="lazy">
+  <div class="hero-inner">
+    <img class="hero-logo" src="img/logo-color.png" alt="Küchen Studio">
+    <p class="tagline">Cocinas hechas a mano, hechas para durar</p>
+    <div class="cta-row">
+      <a class="cta solid" href="galeria.html">Ver proyectos</a>
+      <a class="cta" href="#contacto">Agendar visita</a>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#filosofia" aria-label="Desliza para ver más">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 8l6 6 6-6"/><path d="M6 13l6 6 6-6" opacity=".5"/>
+    </svg>
+  </a>
+</header>
+
+<!-- MANIFIESTO -->
+<section class="manifesto" id="filosofia">
+  <span class="k">Nuestra filosofía</span>
+  <p>Una cocina no se compra.<br>Se encarga, se espera y se hereda.</p>
+</section>
+
+<!-- PROYECTOS -->
+<section class="proyectos" id="proyectos">
+  <div class="proyectos-head">
+    <h2>Lo que hacemos</h2>
+    <span>Cada uno, único</span>
+  </div>
+  <div class="grid">
+    <a class="obra obra-1" href="galeria.html#cocinas">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJsG6AqXzdH9wzU0zk-p7sA/COCINAS/180605%20CORDOBA/IMG_1482.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocinas" loading="lazy">
+      <figcaption><span class="nombre">Cocinas</span><span class="lugar">30 proyectos</span></figcaption>
+    </a>
+    <a class="obra obra-2" href="galeria.html#cocinas-de-exterior">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEHuRpMYLHXpts95oByHOJ8/COCINAS%20DE%20EXTERIOR/191006%20JORGE/5456ac87-6683-4427-ab14-63de8612508f.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocinas de exterior" loading="lazy">
+      <figcaption><span class="nombre">Cocinas de exterior</span><span class="lugar">2 proyectos</span></figcaption>
+    </a>
+    <a class="obra obra-3" href="galeria.html#vestidores">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGeoZeUdeKQ0GgtjzRSwVRg/VESTIDORES/160621%20RH%20-%20CENDRA%20ESCANDINAVA/IMG_2499.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Vestidores" loading="lazy">
+      <figcaption><span class="nombre">Vestidores</span><span class="lugar">6 proyectos</span></figcaption>
+    </a>
+    <a class="obra obra-4" href="galeria.html#muebles-tv">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AANB9t2cWRJwuE5RKWtshS0/MUEBLES%20TV/MUEBLE%20TV%20OCAMPO.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Muebles de TV" loading="lazy">
+      <figcaption><span class="nombre">Muebles de TV</span><span class="lugar">3 proyectos</span></figcaption>
+    </a>
+    <a class="obra obra-5" href="galeria.html#closets">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANXhcZJsFCcODMFZMVz9CwE/CLOSETS/Closet%20Savana%20Ceniza.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Closets" loading="lazy">
+      <figcaption><span class="nombre">Closets</span><span class="lugar">Ver galería</span></figcaption>
+    </a>
+    <a class="obra obra-6" href="galeria.html#cocina-y-closets">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AMDYAs_JgIjWXmOpyl06MmY/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-18%20at%2018.13.46.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Cocina y closets" loading="lazy">
+      <figcaption><span class="nombre">Cocina y closets</span><span class="lugar">Ver galería</span></figcaption>
+    </a>
+    <a class="obra obra-7" href="galeria.html#credenzas-y-mesas">
+      <img src="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFhaGuBo91uJ-ulapPu6qBY/CREDENZAS%20Y%20MESAS/200711%20MARCOS/IMG_2417.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1" alt="Credenzas y mesas" loading="lazy">
+      <figcaption><span class="nombre">Credenzas y mesas</span><span class="lugar">Ver galería</span></figcaption>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <span class="k">Hablemos</span>
+  <h2>Su próxima cocina empieza con una conversación.</h2>
+
+  <div class="sucursales">
+    <div class="suc">
+      <h3>Villahermosa</h3>
+      <span class="estado">Tabasco</span>
+      <p>Adolfo Ruiz Cortines esq. Sindicato de Agricultura,<br>Col. López Mateos, C.P. 86040</p>
+      <span class="dato"><b>Tel</b> <a href="tel:+529933148675">993 314 8675</a></span>
+      <span class="dato"><b>WhatsApp</b> <a href="https://wa.me/529933148675">993 314 8675</a></span>
+      <span class="dato"><b>Mapa</b> <a href="https://www.google.com/maps/search/?api=1&query=Kuchen+Studio+Adolfo+Ruiz+Cortines+Villahermosa" target="_blank" rel="noopener">Cómo llegar</a></span>
+    </div>
+    <div class="suc">
+      <h3>Mérida</h3>
+      <span class="estado">Yucatán</span>
+      <p>Plaza de la Construcción, Local 2</p>
+      <span class="dato"><b>Tel</b> <a href="tel:+529991335865">999 133 5865</a></span>
+      <span class="dato"><b>WhatsApp</b> <a href="https://wa.me/529991335865">999 133 5865</a></span>
+      <span class="dato"><b>Mapa</b> <a href="https://www.google.com/maps/search/?api=1&query=Kuchen+Studio+Plaza+de+la+Construccion+Merida" target="_blank" rel="noopener">Cómo llegar</a></span>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a class="cta solid" href="https://wa.me/529933148675">WhatsApp</a>
+    <a class="cta" href="mailto:ventas@kuchen.mx">Escríbanos</a>
+  </div>
+</section>
+
+<footer>
+  <span>© KÜCHEN</span>
+  <span>Villahermosa · Mérida</span>
+</footer>
+
+<script>
+// slideshow del hero — cambia cada 5s con fundido
+const slides = document.querySelectorAll('.hero > img');
+let cur = 0;
+setInterval(() => {
+  slides[cur].classList.remove('on');
+  cur = (cur + 1) % slides.length;
+  slides[cur].classList.add('on');
+}, 5000);
+
+// el logo del nav aparece al salir del hero
+addEventListener('scroll', () => {
+  document.body.classList.toggle('scrolled', scrollY > innerHeight * .55);
+}, { passive: true });
+</script>
+
+</body>
+</html>
