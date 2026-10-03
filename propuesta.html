@@ -256,11 +256,16 @@
     color: var(--ink); letter-spacing: 0; text-transform: none;
   }
   .planes thead .precio small { font-size: .72rem; font-weight: 400; color: var(--ink-soft); }
-  .planes td:first-child { color: var(--ink-soft); }
+  .planes td:first-child { color: var(--ink-soft); width: 46%; }
   .planes td.si { color: var(--ink); }
   .planes td.no { color: var(--ink-soft); opacity: .35; }
-  .planes .nota-td { font-size: .78rem; color: var(--ink-soft); }
-  .planes-nota { font-size: .82rem; margin-top: 1rem; }
+  .planes .nota-td { display: block; font-size: .75rem; color: var(--ink-soft); }
+  .planes tfoot td {
+    border-bottom: none; border-top: 2px solid var(--ink);
+    padding-top: 1.1rem; font-weight: 600; color: var(--ink);
+  }
+  .planes tfoot td:first-child { color: var(--ink); font-weight: 500; }
+  .planes-nota { font-size: .82rem; margin-top: 1.2rem; }
   @media (max-width: 720px) {
     .planes { font-size: .8rem; }
     .planes th, .planes td { padding: .7rem .35rem; }
@@ -445,66 +450,74 @@
     <table class="planes">
       <thead>
         <tr>
-          <th></th>
-          <th>Básico<span class="precio">$0<small>/mes</small></span></th>
-          <th>Intermedio<span class="precio">~$14<small> USD/mes</small></span></th>
-          <th>Premium<span class="precio">~$29<small> USD/mes</small></span></th>
+          <th class="feat">Automatización</th>
+          <th>Básica<span class="precio">$5,000<small> MXN · único</small></span></th>
+          <th>Intermedia<span class="precio">$10,000<small> MXN · único</small></span></th>
+          <th>Premium<span class="precio">$15,000<small> MXN · único</small></span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Sitio web + galería de proyectos (Dropbox)</td>
-          <td class="si">✓</td><td class="si">✓</td><td class="si">✓</td>
+          <td>Auto-respuesta en WhatsApp</td>
+          <td class="si">✓<span class="nota-td">app Business</span></td><td class="si">✓</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>Auto-respuesta en WhatsApp — bienvenida y respuestas rápidas con links a la galería</td>
-          <td class="si">✓ <span class="nota-td">app Business</span></td><td class="si">✓</td><td class="si">✓</td>
+          <td>Respuesta instantánea + FAQ en Facebook e Instagram</td>
+          <td class="si">✓<span class="nota-td">Business Suite</span></td><td class="si">✓</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>Respuesta instantánea + preguntas frecuentes en Facebook / Instagram</td>
-          <td class="si">✓ <span class="nota-td">Business Suite</span></td><td class="si">✓</td><td class="si">✓</td>
-        </tr>
-        <tr>
-          <td>Flujos con preguntas — "¿Villahermosa o Mérida?" dirige al showroom correcto y captura nombre + teléfono</td>
+          <td>Flujos guiados por ciudad y captura del prospecto</td>
           <td class="no">—</td><td class="si">✓</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>WhatsApp + Messenger en un solo panel (ManyChat)</td>
+          <td>WhatsApp + Messenger en un solo panel</td>
           <td class="no">—</td><td class="si">✓</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>Instagram como tercer canal automatizado</td>
+          <td>Instagram automatizado</td>
           <td class="no">—</td><td class="no">—</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>IA que entiende preguntas libres — "¿hacen cocinas de exterior?"</td>
+          <td>IA que entiende preguntas libres</td>
           <td class="no">—</td><td class="no">—</td><td class="si">✓</td>
         </tr>
         <tr>
-          <td>Chat con IA dentro del sitio, que dirige a WhatsApp</td>
+          <td>Chat con IA dentro del sitio</td>
           <td class="no">opcional*</td><td class="no">opcional*</td><td class="no">opcional*</td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td>Suscripción de herramientas (al proveedor)</td>
+          <td class="si">$0</td><td class="si">~$270 MXN<span class="nota-td">ManyChat Essential</span></td><td class="si">~$550 MXN<span class="nota-td">ManyChat Pro</span></td>
+        </tr>
+      </tfoot>
     </table>
-    <p class="planes-nota">* Chat en el sitio: ~$19–45 USD/mes con servicios como Chatbase/Tidio, o ~$2–10 USD/mes a medida.
-    Meta no cobra las respuestas dentro de la conversación del cliente; solo cobra plantillas de campañas salientes (~$0.03 USD c/u en México), opcionales.
-    Los planes Intermedio y Premium corresponden a ManyChat Essential y Pro (partner oficial de Meta), facturados anualmente.</p>
+    <p class="planes-nota">Los precios de implementación son pago único en MXN. Las suscripciones de ManyChat se pagan directo al proveedor en USD
+    (~$14 y ~$29 USD/mes facturados anualmente). *Chat en el sitio: ~$360–860 MXN/mes con servicios como Chatbase/Tidio, o ~$40–190 MXN/mes a medida.
+    Meta no cobra las respuestas dentro de la conversación del cliente; solo plantillas de campañas salientes (~$0.03 USD c/u), opcionales.</p>
 
     <div class="fases">
       <div class="fase">
-        <div class="fk">Incluido</div>
+        <div class="fk">Sitio web</div>
         <div>
-          <h4>Hosting, imágenes y dominio</h4>
-          <p>Sitio en GitHub Pages: <strong>$0</strong>. Fotos servidas desde su Dropbox: <strong>$0</strong>.
-          Dominio kuchen.mx: ya es de ustedes — solo apuntarlo cuando esté listo.</p>
+          <h4>Ya realizado — no se cobra de nuevo</h4>
+          <p>El diseño y desarrollo del sitio con su galería ya fue cubierto. Lo que ven en este documento ya está en línea y funcionando.</p>
+        </div>
+      </div>
+      <div class="fase">
+        <div class="fk">Hosting</div>
+        <div>
+          <h4>Su dominio: kuchen.mx</h4>
+          <p>Este demo vive temporalmente en GitHub Pages. En producción el sitio migrará a su propio hosting bajo <strong>kuchen.mx</strong>.
+          Las fotos se siguen sirviendo desde su Dropbox: <strong>$0</strong>.</p>
         </div>
       </div>
       <div class="fase">
         <div class="fk">Soporte</div>
         <div>
-          <h4>Soporte y operación mensual — $____ MXN/mes</h4>
-          <p>Los costos de las herramientas anteriores van directo a cada proveedor. Adicionalmente, el plan de soporte cubre:
-          configuración y ajuste de los flujos de WhatsApp/Messenger, publicación de proyectos nuevos (fotos de Dropbox → galería),
+          <h4>Soporte y operación — $1,000 MXN/mes</h4>
+          <p>Cubre: configuración y ajuste de los flujos de WhatsApp/Messenger, publicación de proyectos nuevos (fotos de Dropbox → galería),
           monitoreo y reporte de prospectos, cambios al sitio y atención técnica cuando Meta o Dropbox cambien sus reglas.</p>
         </div>
       </div>
