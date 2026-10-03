@@ -520,31 +520,6 @@ const KUCHEN_DATA = [
   ]
  },
  {
-  "rubro": "COCINA Y CLOSETS",
-  "slug": "cocina-y-closets",
-  "proyectos": [
-   {
-    "nombre": "SM16",
-    "fotos": [
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJCe-eSbgFbW9BUCXaP4vSo/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.35.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AMDYAs_JgIjWXmOpyl06MmY/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-18%20at%2018.13.46.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APEiFyv5_f4njxmnf5j4RJo/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-18%20at%2018.14.40.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AG40TmN3qE8P0av9ZLLPBXo/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-18%20at%2018.49.49.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ABrP_oQqvleh5x8BDKNOv6Y/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.01.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ACUcIZlUmZ7gaprWfFSCdh0/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.08.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APxL5sn9f_FxFmV0lGgzFhY/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.19.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKylxVER2POjzbe6yd80oZ8/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.25.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AIf2EzvpVLf5McuNU50mDoI/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.44.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AMC36FWBQJHl-JYsBSZFVv0/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.12.57.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AG31A-dlFPWQkHWvntYiX0s/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.13.04.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AC9yCeR5T6W8GX8F74MOpuo/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.13.18.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
-     "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALdDaGO1xRXIa3zv4PdXq90/COCINA%20Y%20CLOSETS/SM16/WhatsApp%20Image%202024-04-24%20at%2012.17.04.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
-   }
-  ],
-  "varios": []
- },
- {
   "rubro": "MUEBLES TV",
   "slug": "muebles-tv",
   "proyectos": [
