@@ -239,6 +239,33 @@
     font-weight: 600; font-size: 1.2rem; margin-bottom: .3rem;
   }
   .fase p { font-size: .92rem; }
+
+  .planes {
+    width: 100%; border-collapse: collapse; margin-top: 3rem; font-size: .92rem;
+  }
+  .planes th, .planes td {
+    padding: 1rem .6rem; border-bottom: 1px solid var(--hairline);
+    text-align: left; vertical-align: top;
+  }
+  .planes thead th {
+    font-size: .68rem; letter-spacing: .24em; text-transform: uppercase;
+    color: var(--brass); font-weight: 500;
+  }
+  .planes thead .precio {
+    display: block; margin-top: .45rem; font-size: 1.35rem; font-weight: 600;
+    color: var(--ink); letter-spacing: 0; text-transform: none;
+  }
+  .planes thead .precio small { font-size: .72rem; font-weight: 400; color: var(--ink-soft); }
+  .planes td:first-child { color: var(--ink-soft); }
+  .planes td.si { color: var(--ink); }
+  .planes td.no { color: var(--ink-soft); opacity: .35; }
+  .planes .nota-td { font-size: .78rem; color: var(--ink-soft); }
+  .planes-nota { font-size: .82rem; margin-top: 1rem; }
+  @media (max-width: 720px) {
+    .planes { font-size: .8rem; }
+    .planes th, .planes td { padding: .7rem .35rem; }
+    .planes thead .precio { font-size: 1.05rem; }
+  }
   @media (max-width: 560px) {
     .fase { grid-template-columns: 1fr; gap: .5rem; }
   }
@@ -415,33 +442,55 @@
     <h2>Qué cuesta cada pieza, <em>para que decidan</em>.</h2>
     <p>Transparencia total: esto es lo que cobran los proveedores, a octubre 2026. Nada es obligatorio — el sitio funciona sin nada de esto.</p>
 
+    <table class="planes">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Básico<span class="precio">$0<small>/mes</small></span></th>
+          <th>Intermedio<span class="precio">~$14<small> USD/mes</small></span></th>
+          <th>Premium<span class="precio">~$29<small> USD/mes</small></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sitio web + galería de proyectos (Dropbox)</td>
+          <td class="si">✓</td><td class="si">✓</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>Auto-respuesta en WhatsApp — bienvenida y respuestas rápidas con links a la galería</td>
+          <td class="si">✓ <span class="nota-td">app Business</span></td><td class="si">✓</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>Respuesta instantánea + preguntas frecuentes en Facebook / Instagram</td>
+          <td class="si">✓ <span class="nota-td">Business Suite</span></td><td class="si">✓</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>Flujos con preguntas — "¿Villahermosa o Mérida?" dirige al showroom correcto y captura nombre + teléfono</td>
+          <td class="no">—</td><td class="si">✓</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>WhatsApp + Messenger en un solo panel (ManyChat)</td>
+          <td class="no">—</td><td class="si">✓</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>Instagram como tercer canal automatizado</td>
+          <td class="no">—</td><td class="no">—</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>IA que entiende preguntas libres — "¿hacen cocinas de exterior?"</td>
+          <td class="no">—</td><td class="no">—</td><td class="si">✓</td>
+        </tr>
+        <tr>
+          <td>Chat con IA dentro del sitio, que dirige a WhatsApp</td>
+          <td class="no">opcional*</td><td class="no">opcional*</td><td class="no">opcional*</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="planes-nota">* Chat en el sitio: ~$19–45 USD/mes con servicios como Chatbase/Tidio, o ~$2–10 USD/mes a medida.
+    Meta no cobra las respuestas dentro de la conversación del cliente; solo cobra plantillas de campañas salientes (~$0.03 USD c/u en México), opcionales.
+    Los planes Intermedio y Premium corresponden a ManyChat Essential y Pro (partner oficial de Meta), facturados anualmente.</p>
+
     <div class="fases">
-      <div class="fase">
-        <div class="fk">Requerido</div>
-        <div>
-          <h4>Automatización WhatsApp + Messenger — ManyChat</h4>
-          <p>Auto-responde en WhatsApp, Facebook Messenger e Instagram, saluda al instante y comparte las galerías del sitio.
-          <strong>Plan Essential ~$14 USD/mes</strong> (2 canales, automatización básica) o
-          <strong>Plan Pro ~$29 USD/mes anual</strong> (~$39 mensual — incluye respuestas con IA y 3 canales).
-          Meta no cobra las respuestas que se envían dentro de la conversación del cliente; solo cobra plantillas de campañas salientes (~$0.03 USD c/u en México), opcionales.</p>
-        </div>
-      </div>
-      <div class="fase">
-        <div class="fk">Alternativa $0</div>
-        <div>
-          <h4>Solo WhatsApp Business (app)</h4>
-          <p>Gratis y sin herramientas nuevas: mensaje de bienvenida automático y respuestas rápidas con los links de la galería. Cubre WhatsApp pero no Facebook ni IA.</p>
-        </div>
-      </div>
-      <div class="fase">
-        <div class="fk">Opcional</div>
-        <div>
-          <h4>Chat con IA dentro del sitio</h4>
-          <p>Un botón de chat que responde dudas y dirige a WhatsApp. Servicios tipo Chatbase/Tidio:
-          <strong>~$19–45 USD/mes</strong>. O hecho a medida (función serverless + API de IA):
-          <strong>~$2–10 USD/mes</strong> según volumen, más desarrollo.</p>
-        </div>
-      </div>
       <div class="fase">
         <div class="fk">Incluido</div>
         <div>
