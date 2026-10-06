@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KÜCHEN — Propuesta</title>
+<meta name="description" content="Propuesta de sitio web y automatización para Küchen Studio — cocinas de autor en Villahermosa y Mérida.">
+<meta property="og:title" content="KÜCHEN — Propuesta de sitio web">
+<meta property="og:description" content="Su portafolio, en un sitio a la altura de sus cocinas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://unknownshopper.github.io/kuchen/img/thumbs/cocinas-3.jpg">
 <link rel="icon" type="image/png" href="img/ico.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,6 +206,36 @@
     font-size: .6rem; letter-spacing: .3em; text-transform: uppercase;
     border: 1px solid rgba(245,241,234,.5);
     padding: .7rem 0; margin-top: 1.4rem;
+  }
+  .chat-demo { margin: 4rem auto 0; max-width: 560px; text-align: left; }
+  .chat-card {
+    background: #f2ede4;
+    border: 1px solid var(--hairline);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 24px 50px -30px rgba(28,26,23,.25);
+  }
+  .chat-head {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .85rem 1.1rem;
+    background: #fff;
+    border-bottom: 1px solid var(--hairline);
+    font-size: .78rem; font-weight: 600; letter-spacing: .04em;
+  }
+  .chat-head .dot { width: 8px; height: 8px; border-radius: 50%; background: #25d366; }
+  .chat-head small {
+    margin-left: auto; font-weight: 400;
+    color: var(--ink-soft); font-size: .62rem;
+    letter-spacing: .14em; text-transform: uppercase;
+  }
+  .chat-body { padding: 1.2rem 1.1rem 1.4rem; display: flex; flex-direction: column; gap: .55rem; }
+  .bubble { max-width: 82%; padding: .55rem .85rem; border-radius: 14px; font-size: .85rem; line-height: 1.45; }
+  .bubble.in { background: #fff; align-self: flex-start; border-bottom-left-radius: 4px; }
+  .bubble.out { background: #d9fdd3; align-self: flex-end; border-bottom-right-radius: 4px; }
+  .bubble .who {
+    display: block; font-size: .58rem; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: var(--brass); margin-bottom: .15rem;
   }
   .mockup-note {
     margin-top: 1.8rem;
@@ -491,6 +526,23 @@
       <li>El chat con IA en el sitio está incluido en Intermedia y Premium; su costo mensual de servicio va aparte (~$40–190 MXN/mes a medida, o ~$360–860 MXN/mes con Chatbase/Tidio).</li>
       <li>Meta no cobra las respuestas dentro de la conversación del cliente; solo plantillas de campañas salientes (~$0.03 USD c/u), opcionales.</li>
     </ul>
+
+    <div class="chat-demo">
+      <div class="chat-card">
+        <div class="chat-head">
+          <span class="dot"></span>
+          KÜCHEN · WhatsApp
+          <small>Plan Premium</small>
+        </div>
+        <div class="chat-body">
+          <div class="bubble out">Hola, vi una cocina en su Instagram. ¿Más o menos cuánto cuesta una así?</div>
+          <div class="bubble in"><span class="who">IA</span>Hola, buenas tardes. Depende de medidas y materiales. ¿En qué ciudad está usted: Villahermosa o Mérida?</div>
+          <div class="bubble out">En Mérida. Es para una terraza.</div>
+          <div class="bubble in"><span class="who">IA</span>Perfecto — una cocina de exterior. Le agendo una cita en nuestro showroom de Mérida para ver acabados y cotizar. ¿Qué día le queda mejor?</div>
+        </div>
+      </div>
+      <p class="mockup-note" style="text-align:center">Ejemplo ilustrativo — el tono y las respuestas se definen con ustedes</p>
+    </div>
 
     <div class="fases">
       <div class="fase">
