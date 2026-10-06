@@ -345,6 +345,14 @@
     align-self: flex-end; border-bottom-right-radius: 4px;
   }
   .msg.bot a { color: var(--brass); font-weight: 600; }
+  .msg .wa-row { display: flex; flex-direction: column; gap: .4rem; margin-top: .5rem; }
+  .msg .wa {
+    display: flex; justify-content: space-between; align-items: center;
+    border: 1px solid var(--brass); border-radius: 10px;
+    padding: .5rem .75rem; text-decoration: none;
+    font-weight: 600;
+  }
+  .msg .wa:hover { background: var(--brass); color: #fff; }
   .msg.typing { display: flex; gap: 4px; padding: .7rem .9rem; }
   .msg.typing i {
     width: 6px; height: 6px; border-radius: 50%;
@@ -568,16 +576,16 @@ let chatGreeted = false;
 const RESPUESTAS = [
   [/hola|buenas|qu[eé] tal/, '¡Hola! Bienvenido a Küchen Studio. Puedo mostrarle la galería, hablarle de cotizaciones o agendarle una cita al showroom. ¿Qué le interesa?', ['Ver la galería','Cotizar','Agendar cita']],
   [/precio|costo|cu[aá]nto|cotiza|vale/, 'Cada proyecto es a la medida: el precio depende de medidas, materiales y acabados. Para cotizarle bien agendamos una visita. ¿En qué ciudad está usted?', ['Villahermosa','Mérida']],
-  [/m[eé]rida/, 'En Mérida estamos en Plaza de la Construcción, con cita. Escríbanos por <a href="https://wa.me/529991335865">WhatsApp</a> y lo agendamos.', ['Agendar cita','Ver la galería']],
-  [/villahermosa|tabasco/, 'En Villahermosa estamos en Adolfo Ruiz Cortines esq. Sindicato de Agricultura, con cita. Escríbanos por <a href="https://wa.me/529933148675">WhatsApp</a> y lo agendamos.', ['Agendar cita','Ver la galería']],
+  [/m[eé]rida/, 'En Mérida estamos en Plaza de la Construcción, con cita. <span class="wa-row"><a class="wa" href="https://wa.me/529991335865">Mérida <span>WhatsApp →</span></a></span>', ['Agendar cita','Ver la galería']],
+  [/villahermosa|tabasco/, 'En Villahermosa estamos en Adolfo Ruiz Cortines esq. Sindicato de Agricultura, con cita. <span class="wa-row"><a class="wa" href="https://wa.me/529933148675">Villahermosa <span>WhatsApp →</span></a></span>', ['Agendar cita','Ver la galería']],
   [/terraza|exterior|jard[ií]n|asador/, 'Hacemos cocinas de exterior diseñadas para clima y uso real. Vea proyectos en la <a href="galeria.html#cocinas-de-exterior">galería</a>.', ['Agendar cita','Cotizar']],
   [/cocina/, 'Las cocinas son nuestra especialidad — 30 proyectos en la <a href="galeria.html#cocinas">galería</a>. ¿Le cotizamos la suya?', ['Cotizar','Agendar cita']],
   [/closet|vestidor|cl[oó]set|mueble|credenza/, 'También fabricamos closets, vestidores y muebles a la medida — vea ejemplos en la <a href="galeria.html">galería</a>.', ['Cotizar','Agendar cita']],
-  [/cita|showroom|visita|agenda|horario|direcci[oó]n|ubicaci[oó]n|d[oó]nde/, 'Los showrooms atienden con cita. Escríbanos por WhatsApp y agendamos el mismo día: <a href="https://wa.me/529933148675">Villahermosa</a> · <a href="https://wa.me/529991335865">Mérida</a>', ['Ver la galería']],
+  [/cita|showroom|visita|agenda|horario|direcci[oó]n|ubicaci[oó]n|d[oó]nde/, 'Los showrooms atienden con cita — ¿a cuál agendamos? <span class="wa-row"><a class="wa" href="https://wa.me/529933148675">Villahermosa <span>WhatsApp →</span></a><a class="wa" href="https://wa.me/529991335865">Mérida <span>WhatsApp →</span></a></span>', ['Ver la galería']],
   [/galer[ií]a|foto|proyecto|cat[aá]logo/, 'Aquí está el portafolio completo por categoría: <a href="galeria.html">abrir la galería</a>.', ['Cotizar','Agendar cita']],
   [/gracias|adi[oó]s|perfecto|ok/, 'Con gusto. Cuando quiera agendar, estamos a un mensaje. ¡Hasta pronto!', []],
 ];
-const CHAT_FALLBACK = 'Para eso le conviene un asesor — escríbanos por <a href="https://wa.me/529933148675">WhatsApp</a> y le respondemos hoy mismo.';
+const CHAT_FALLBACK = 'Para eso le conviene un asesor — le respondemos hoy mismo por WhatsApp: <span class="wa-row"><a class="wa" href="https://wa.me/529933148675">Villahermosa <span>WhatsApp →</span></a><a class="wa" href="https://wa.me/529991335865">Mérida <span>WhatsApp →</span></a></span>';
 
 function addMsg(html, who) {
   const d = document.createElement('div');
