@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AI2VOG5lGHEi99ZEIYhDum0/COCINAS/210417%20FEUD/PHOTO-2021-04-16-18-52-24-1.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1">
 <style>
   :root {
     --ink: #1c1a17;
@@ -46,6 +47,21 @@
   }
   .nav-logo { opacity: 0; pointer-events: none; transition: opacity .45s ease; }
   body.scrolled .nav-logo { opacity: 1; pointer-events: auto; }
+
+  /* ── loader ── */
+  #loader {
+    position: fixed; inset: 0; z-index: 200;
+    background: #0e0d0b;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity .6s ease;
+  }
+  #loader.done { opacity: 0; pointer-events: none; }
+  #loader img { width: min(220px, 55vw); animation: lpulse 2s ease-in-out infinite; }
+  @keyframes lpulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+
+  /* ── reveal de secciones ── */
+  section { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+  section.seen { opacity: 1; transform: none; }
 
   /* ── hero ── */
   .hero {
@@ -264,6 +280,9 @@
 </head>
 <body>
 
+<div id="loader" aria-hidden="true"><img src="img/logo-color.png" alt=""></div>
+<noscript><style>#loader{display:none} section{opacity:1;transform:none}</style></noscript>
+
 <nav>
   <a class="nav-logo" href="index.html" aria-label="Küchen Studio">
     <img src="img/logo-color.png" alt="Küchen Studio">
@@ -378,6 +397,28 @@
 </footer>
 
 <script>
+// loader — sale cuando carga la primera foto del hero (o 4.5s máx)
+const loader = document.getElementById('loader');
+const firstSlide = document.querySelector('.hero > img');
+let loaderGone = false;
+function hideLoader() {
+  if (loaderGone) return; loaderGone = true;
+  loader.classList.add('done');
+  setTimeout(() => loader.remove(), 700);
+}
+if (firstSlide.complete && firstSlide.naturalWidth) hideLoader();
+else {
+  firstSlide.addEventListener('load', hideLoader, { once: true });
+  firstSlide.addEventListener('error', hideLoader, { once: true });
+}
+setTimeout(hideLoader, 4500);
+
+// secciones aparecen al entrar al viewport
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('seen'); io.unobserve(e.target); } });
+}, { threshold: .12 }) : null;
+document.querySelectorAll('section').forEach(s => io ? io.observe(s) : s.classList.add('seen'));
+
 // slideshow del hero — cambia cada 5s con fundido
 const slides = document.querySelectorAll('.hero > img');
 let cur = 0;
