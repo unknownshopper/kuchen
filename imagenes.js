@@ -10,7 +10,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAsQh_GzRBG3iBXHvXb9MVM/COCINAS/1707289%20TO%C3%91O%20-%20MONTANA%20Y%20CACAO%20BAHIA/IMG_0121.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AM4g6-o6B-q7xu1MQN50XJY/COCINAS/1707289%20TO%C3%91O%20-%20MONTANA%20Y%20CACAO%20BAHIA/IMG_0124.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHEtmZmKE3QnHAjEACn57l4/COCINAS/1707289%20TO%C3%91O%20-%20MONTANA%20Y%20CACAO%20BAHIA/IMG_0125.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-0.jpg"
    },
    {
     "nombre": "ABS",
@@ -29,13 +30,15 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKAHqKxpdiM8JJx6KLVnLg4/COCINAS/260827%20ABS/PHOTO-2026-08-27-13-34-28%206.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAFx_l9eNJrTuT0J4Gk0WH8/COCINAS/260827%20ABS/PHOTO-2026-08-27-13-34-28.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AI7SBLGGyYNXsMioHSu5SYM/COCINAS/260827%20ABS/PHOTO-2026-08-27-13-34-29.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-1.jpg"
    },
    {
     "nombre": "FESTIVAL DEL CHOCOLATE",
     "fotos": [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALgYHG2RUk0yzw5uljb4kgo/COCINAS/221115%20FESTIVAL%20DEL%20CHOCOLATE/Inaguracion.png?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-2.jpg"
    },
    {
     "nombre": "FEUD",
@@ -57,7 +60,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ACLrl7Yj-5TYLk24EsbLgqY/COCINAS/210417%20FEUD/PHOTO-2021-04-16-18-52-24-15.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFpq5HkupHexd9cIkyDZVlg/COCINAS/210417%20FEUD/PHOTO-2021-04-16-18-52-24-16.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANcbIUjiSDu5rA076KCrjII/COCINAS/210417%20FEUD/PHOTO-2021-04-16-18-52-24.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-3.jpg"
    },
    {
     "nombre": "SL",
@@ -71,7 +75,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGP6Wwg18t7VV5n5f6_CrLM/COCINAS/210203%20SL/PHOTO-2022-02-02-19-28-34-5.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALdZLiTYZswOgyQg_R_tSg4/COCINAS/210203%20SL/PHOTO-2022-02-02-19-28-34-6.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AF8yhqaro0r58SrNxFtrsmw/COCINAS/210203%20SL/PHOTO-2022-02-02-19-28-34.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-4.jpg"
    },
    {
     "nombre": "PUERTA MADERO",
@@ -84,7 +89,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEEikiwN5tavNZn3-Kubngc/COCINAS/201005%20PUERTA%20MADERO/IMG_2770.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APpUHm-sg7KkexxlBGEBfp4/COCINAS/201005%20PUERTA%20MADERO/IMG_2771.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADl6HlqIXlXQNQJivD8voy4/COCINAS/201005%20PUERTA%20MADERO/IMG_2773.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-5.jpg"
    },
    {
     "nombre": "THELMA",
@@ -94,7 +100,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALtAhzJMgasftqfRttBn4hk/COCINAS/200714%20THELMA/IMG_2460.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAMjULLk-36UG6LCWQy29io/COCINAS/200714%20THELMA/IMG_2461.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APdaGY6_mrqQnvT6ZEL0LCk/COCINAS/200714%20THELMA/IMG_2462.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-6.jpg"
    },
    {
     "nombre": "REAL CAMPESTRE",
@@ -102,7 +109,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AM-rCI3-S4B-K5T8eU_i3ss/COCINAS/200508%20REAL%20CAMPESTRE/IMG_1479.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ABrtYPYzQTR9FnoTclO3hEI/COCINAS/200508%20REAL%20CAMPESTRE/IMG_1480.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AIfMa-N0MNHKMIo9AnE6PrA/COCINAS/200508%20REAL%20CAMPESTRE/IMG_1481.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-7.jpg"
    },
    {
     "nombre": "PENTHOUSE CANCUN",
@@ -137,7 +145,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEF0s7KdcsaSmd80USSJREg/COCINAS/191211%20PENTHOUSE%20CANCUN/IMG_9723.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AANzuMu5UzWQsGPui0LhR-k/COCINAS/191211%20PENTHOUSE%20CANCUN/IMG_9724.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AOJrTzTyAEloKF21UNLRoGw/COCINAS/191211%20PENTHOUSE%20CANCUN/IMG_9725.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-8.jpg"
    },
    {
     "nombre": "CARLOS",
@@ -147,7 +156,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APcUu0ccXKYx_fLkmjxRrm4/COCINAS/190711%20CARLOS/IMG_7542.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APOYRPIs9QMvsqTgKAOSCJU/COCINAS/190711%20CARLOS/IMG_7543.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AL48KwNaFt2yL_iAJhB62iE/COCINAS/190711%20CARLOS/IMG_7544.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-9.jpg"
    },
    {
     "nombre": "FRACC OROPEZA",
@@ -159,7 +169,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APbtLsAXyx8exhPrakcupm8/COCINAS/190605%20FRACC%20OROPEZA/-8412644694635877205_IMG_2048.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGF6pKzm4qfGfAFz0XK6WCU/COCINAS/190605%20FRACC%20OROPEZA/4970796413543600173_IMG_2051.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAydSBEwEj_2UElJ__IfFzA/COCINAS/190605%20FRACC%20OROPEZA/7345552730704319644_IMG_2049.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-10.jpg"
    },
    {
     "nombre": "DORCAS FRONTERA",
@@ -176,7 +187,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFkTAPkTzxYV4OtzDZW4F_w/COCINAS/190403%20DORCAS%20FRONTERA/IMG_5910.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALg0lXnMjHUNtjMje6xNUC0/COCINAS/190403%20DORCAS%20FRONTERA/IMG_5911.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ACxPG3SWFPQPbK8-ct8Qiak/COCINAS/190403%20DORCAS%20FRONTERA/IMG_5912.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-11.jpg"
    },
    {
     "nombre": "JUAN MANUEL",
@@ -187,7 +199,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANvb_6uxnFjFT3Y9mgRTGFQ/COCINAS/190223%20JUAN%20MANUEL/IMG_5241.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APpoASicFCVNb8yPbPtBgW8/COCINAS/190223%20JUAN%20MANUEL/IMG_5243.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADzMkJwgRIVfNGwPvBqSvgY/COCINAS/190223%20JUAN%20MANUEL/IMG_5244.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-12.jpg"
    },
    {
     "nombre": "MARTA",
@@ -196,7 +209,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAOB_YXaw-MhLRC5GkqDqcs/COCINAS/190218%20MARTA/IMG_5188.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFYYPzKiOOIhjf-fLwILxkk/COCINAS/190218%20MARTA/IMG_5189.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANBSXPBgsYEX--k_Ft5MZOk/COCINAS/190218%20MARTA/IMG_5192.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-13.jpg"
    },
    {
     "nombre": "MAURICIO",
@@ -204,7 +218,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADmzxda-6fbJbYnpkOxLlAs/COCINAS/190102%20MAURICIO/IMG_4709.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFsHC5zDLtS-TwghUVvcUtk/COCINAS/190102%20MAURICIO/IMG_4710.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AM9Kfb8GiAzQkZNkT1ilIQw/COCINAS/190102%20MAURICIO/IMG_4713.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-14.jpg"
    },
    {
     "nombre": "LH",
@@ -221,7 +236,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AC5cPIG4PTtpMBZ2pVcqZWE/COCINAS/181007%20LH/IMG_1995.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALMNaQYnCNiCbjedBdELCEA/COCINAS/181007%20LH/IMG_1996.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADKqgWPKeQhPG-unUfloOLM/COCINAS/181007%20LH/IMG_1998.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-15.jpg"
    },
    {
     "nombre": "COATZA",
@@ -230,7 +246,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFcn83gd7d9GXyMnL-BhhT0/COCINAS/180710%20COATZA/IMG_1693.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AOtesCqhQ3Z4LaLPq179IPQ/COCINAS/180710%20COATZA/IMG_1696.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AIEbDYHYu-rE-SHr4_NsB2Y/COCINAS/180710%20COATZA/IMG_1700.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-16.jpg"
    },
    {
     "nombre": "GUADALUPE",
@@ -244,7 +261,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHGi6fP8BKzNLV9Lgr2LOv0/COCINAS/180616%20GUADALUPE/IMG_1545.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANYHiLpBQ-BmKdrgE9iVVCI/COCINAS/180616%20GUADALUPE/IMG_1547.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AACINonwOo0aRo7uhaDCvrM/COCINAS/180616%20GUADALUPE/IMG_1548.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-17.jpg"
    },
    {
     "nombre": "CORDOBA",
@@ -260,7 +278,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANjWsWG2H9ubdNWeQgHJ0dE/COCINAS/180605%20CORDOBA/IMG_1494.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKN1sSx_4BMNHECaL5_FoTI/COCINAS/180605%20CORDOBA/IMG_1495.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJ1feS9b2Inv4RyGOVPNmlw/COCINAS/180605%20CORDOBA/IMG_1498.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-18.jpg"
    },
    {
     "nombre": "AR",
@@ -270,7 +289,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGGw_eYIiMXdSf1arg3151I/COCINAS/180603%20AR/IMG_1462.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGGs4Y_Beapv0QeYK8r0cpU/COCINAS/180603%20AR/IMG_1469.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALG6kN39T7E47tHFVp5oZz0/COCINAS/180603%20AR/IMG_1471.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-19.jpg"
    },
    {
     "nombre": "MOY",
@@ -278,7 +298,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AMA7VFMSsMjnoa9A1n9MxZM/COCINAS/180421%20MOY/IMG_1294.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAfhiQYOERtaZE_1Xm3AHxI/COCINAS/180421%20MOY/IMG_1295.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AMkGhSOOF32w-n_K4kd_CEU/COCINAS/180421%20MOY/IMG_1296.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-20.jpg"
    },
    {
     "nombre": "ONIX",
@@ -288,7 +309,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APlQfJpI_ZS14vMJGgJQe3g/COCINAS/180405%20ONIX/IMG_1194.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANyJZj088wJexXirNjeOFjI/COCINAS/180405%20ONIX/IMG_1200.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AC0U22E3DXtOnCxu_1DzIgE/COCINAS/180405%20ONIX/IMG_1202.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-21.jpg"
    },
    {
     "nombre": "BRIS",
@@ -300,7 +322,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AD87sRuXuhLe7yiJdcyyeHQ/COCINAS/180203%20BRIS/IMG_0987.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANMXoVICrx_vTC8bXsZuwNY/COCINAS/180203%20BRIS/IMG_0992.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AL6gyrC1sivaPj-DoElpgIU/COCINAS/180203%20BRIS/IMG_0996.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-22.jpg"
    },
    {
     "nombre": "CF",
@@ -314,7 +337,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKr9uLKUmeA5qmmJwCtlTIk/COCINAS/180118%20CF/IMG_0906.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGAkj0xOnyS-rukIarESeKQ/COCINAS/180118%20CF/IMG_0908.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADzNC5GXnGHWsZnZR9udMKs/COCINAS/180118%20CF/IMG_0909.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-23.jpg"
    },
    {
     "nombre": "MED NOIR Y VAIL",
@@ -325,7 +349,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFdqGwZwmqT7otznJfbUds0/COCINAS/171111%20MED%20NOIR%20Y%20VAIL/IMG_0523.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALDTGN_eltisgzp8D7PYw_k/COCINAS/171111%20MED%20NOIR%20Y%20VAIL/IMG_0524.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHpL5dzPxBzty6M6LO01Jt0/COCINAS/171111%20MED%20NOIR%20Y%20VAIL/IMG_0525.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-24.jpg"
    },
    {
     "nombre": "FALLO VAIL ORINOCO",
@@ -335,7 +360,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADaMukiOFAkDCh1NGUPQ7ts/COCINAS/171014%20FALLO%20VAIL%20ORINOCO/IMG_0449.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGPjFPXZX0W9l_JyrRvbZbw/COCINAS/171014%20FALLO%20VAIL%20ORINOCO/IMG_0450.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AIVU_abvIaZRx9ykeves0rA/COCINAS/171014%20FALLO%20VAIL%20ORINOCO/IMG_0452.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-25.jpg"
    },
    {
     "nombre": "MC - RAUVISIO CRYSTAL BIANCO",
@@ -351,7 +377,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANd5QfJk9JOmgzpjT75gPok/COCINAS/160621%20MC%20-%20RAUVISIO%20CRYSTAL%20BIANCO/IMG_2663.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKe2wluUqfvmKcYPeonkh7s/COCINAS/160621%20MC%20-%20RAUVISIO%20CRYSTAL%20BIANCO/IMG_2664.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHT9HX1x3qM1H-9GX4sKaiA/COCINAS/160621%20MC%20-%20RAUVISIO%20CRYSTAL%20BIANCO/IMG_2665.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-26.jpg"
    },
    {
     "nombre": "NOGAL TERRACOTA - ZEUS",
@@ -363,14 +390,16 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ACUmT_nNKtjJud8zYGE4ohw/COCINAS/160421%20NOGAL%20TERRACOTA%20-%20ZEUS/IMG_5978.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANZi9WgLPiAyde7-VC1O4KU/COCINAS/160421%20NOGAL%20TERRACOTA%20-%20ZEUS/IMG_5979.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AKYLWTvfUtW9f6wjZY0ojr4/COCINAS/160421%20NOGAL%20TERRACOTA%20-%20ZEUS/IMG_5980.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-27.jpg"
    },
    {
     "nombre": "COCINA T ING. HECTOR GARCIA MORA",
     "fotos": [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ACD_j21NL1fkC_e0nf954QQ/COCINAS/COCINA%20T%20ING.%20HECTOR%20GARCIA%20MORA/WhatsApp%20Image%202025-10-07%20at%2014.06.50%20%281%29.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APgFhTsGmx6VjMo39xBHny0/COCINAS/COCINA%20T%20ING.%20HECTOR%20GARCIA%20MORA/WhatsApp%20Image%202025-10-07%20at%2014.06.50.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-28.jpg"
    },
    {
     "nombre": "GRACIELA FERNANDEZ",
@@ -382,7 +411,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AOaC5Wrjn-Gh-QnMnVEiOB4/COCINAS/GRACIELA%20FERNANDEZ/WhatsApp%20Image%202026-02-12%20at%2018.03.56%20%285%29.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AP5DXRZGJHzogKR_Qa4BzBw/COCINAS/GRACIELA%20FERNANDEZ/WhatsApp%20Image%202026-02-12%20at%2018.03.56.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEtp_uJzLB0zLQblfBaje94/COCINAS/GRACIELA%20FERNANDEZ/WhatsApp%20Image%202026-02-12%20at%2018.03.57.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-29.jpg"
    }
   ],
   "varios": []
@@ -404,7 +434,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJSAQfVmOURLCJUig1_DtYM/COCINAS%20DE%20EXTERIOR/191006%20JORGE/IMG_9631.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANErw12odQo2OI7ig5quMU8/COCINAS%20DE%20EXTERIOR/191006%20JORGE/IMG_9634.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AP7gz3Xt7zQfqxGlSpfB9Ek/COCINAS%20DE%20EXTERIOR/191006%20JORGE/IMG_9635.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-de-exterior-0.jpg"
    },
    {
     "nombre": "MC",
@@ -415,7 +446,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFmLN5A06PsJSRVgTmMlsak/COCINAS%20DE%20EXTERIOR/160721%20MC/IMG_2648.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADj6kK0hcAayDpILAO3YY2A/COCINAS%20DE%20EXTERIOR/160721%20MC/IMG_2649.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APR3EMEYjvPLc-y3p8g2O2w/COCINAS%20DE%20EXTERIOR/160721%20MC/IMG_2650.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/cocinas-de-exterior-1.jpg"
    }
   ],
   "varios": []
@@ -438,7 +470,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AP0MyJajYE3DVdeskKU0Qhs/VESTIDORES/231204%20SANTA%20RITA/IMG_5189.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALpiOGiHDFx0YldNdufW3Bc/VESTIDORES/231204%20SANTA%20RITA/IMG_5190.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADdWhps9VDBTXu6urN0gxRA/VESTIDORES/231204%20SANTA%20RITA/IMG_5192.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-0.jpg"
    },
    {
     "nombre": "230116",
@@ -455,7 +488,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ANtnBnKJaC8P-moBCVMfWnA/VESTIDORES/230116/PHOTO-2023-01-16-15-11-11-1.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AN9di9gByM2ubbWoDlCX8NM/VESTIDORES/230116/PHOTO-2023-01-16-15-11-11-2.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APcXzjB1Ed_oLUaKfb9QppM/VESTIDORES/230116/PHOTO-2023-01-16-15-11-11.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-1.jpg"
    },
    {
     "nombre": "DR",
@@ -464,7 +498,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APInZErnYZr1VnTZ7D1IohI/VESTIDORES/220525%20DR/PHOTO-2022-05-20-13-37-21%202.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ABmYxhUHeC7poWgo_KB-HaQ/VESTIDORES/220525%20DR/PHOTO-2022-05-20-13-37-21%203.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AOqVghLUNH7BfChhN79IB_g/VESTIDORES/220525%20DR/PHOTO-2022-05-20-13-37-21.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-2.jpg"
    },
    {
     "nombre": "TOSCANA",
@@ -475,7 +510,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ALADkIUO55k72RDqaqFc65o/VESTIDORES/171223%20TOSCANA/IMG_0743.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHCjDq8f9z7X3czSa2rVMCY/VESTIDORES/171223%20TOSCANA/IMG_0744.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AEC4qvgW6L1bTs47rBamvuA/VESTIDORES/171223%20TOSCANA/IMG_0745.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-3.jpg"
    },
    {
     "nombre": "RN- CENDRA ESCANDINAVA",
@@ -484,7 +520,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJBqoL92IJjkMjrWjeprJwI/VESTIDORES/161122%20RN-%20CENDRA%20ESCANDINAVA/IMG_2983.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFiGjIIKaI1p0vUyM5Bx6Dc/VESTIDORES/161122%20RN-%20CENDRA%20ESCANDINAVA/IMG_2984.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFRj9BwN9psDPELp7NW7F_k/VESTIDORES/161122%20RN-%20CENDRA%20ESCANDINAVA/IMG_2985.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-4.jpg"
    },
    {
     "nombre": "RH - CENDRA ESCANDINAVA",
@@ -495,7 +532,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHT5dyAbQ7lW2ZcHIk-jyqk/VESTIDORES/160621%20RH%20-%20CENDRA%20ESCANDINAVA/IMG_2503.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/ADGlmoMawl_SUP8cyxzYqRQ/VESTIDORES/160621%20RH%20-%20CENDRA%20ESCANDINAVA/IMG_2505.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AHAX62jGgqyEfZml02mJqLw/VESTIDORES/160621%20RH%20-%20CENDRA%20ESCANDINAVA/IMG_2506.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/vestidores-5.jpg"
    }
   ],
   "varios": []
@@ -512,7 +550,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAC7wzOPqox2cvKhGLHbcnM/CLOSETS/OCAMPO/WhatsApp%20Image%202023-01-21%20at%2008.43.34%20%283%29.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AND-ZNqDVt4h6A1gAiNSyLM/CLOSETS/OCAMPO/WhatsApp%20Image%202023-01-21%20at%2008.43.34.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AJCQZ9dguSwXXDr-tyz8W9U/CLOSETS/OCAMPO/WhatsApp%20Image%202023-01-21%20at%2008.43.35.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/closets-0.jpg"
    }
   ],
   "varios": [
@@ -532,20 +571,23 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAyi7F6SJVWoBuIAgHFBA2I/MUEBLES%20TV/211130%20AM/IMG_5692.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AAmbervmsm4bdATuP-bLDtg/MUEBLES%20TV/211130%20AM/IMG_5694.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APS-A4r7iPFhSJpy9yAEMfE/MUEBLES%20TV/211130%20AM/IMG_5696.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/muebles-tv-0.jpg"
    },
    {
     "nombre": "SH",
     "fotos": [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AALT8waNj8Uy2W32RBtOIMw/MUEBLES%20TV/180112%20SH/IMG_0811.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AOqtteglobcCKcK2wGkjrY0/MUEBLES%20TV/180112%20SH/IMG_0812.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/muebles-tv-1.jpg"
    },
    {
     "nombre": "SHOWROOM",
     "fotos": [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AClCkKYnaWSPq71aCsRIVOg/MUEBLES%20TV/SHOWROOM/IMG_0421.jpg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/muebles-tv-2.jpg"
    }
   ],
   "varios": [
@@ -565,7 +607,8 @@ const KUCHEN_DATA = [
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AFeQa9Xj0Nu8jOyjHo2Fy0w/CREDENZAS%20Y%20MESAS/200711%20MARCOS/IMG_2420.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/APXP-p8Lo2D3eNmRn1m5mfs/CREDENZAS%20Y%20MESAS/200711%20MARCOS/IMG_2421.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1",
      "https://www.dropbox.com/scl/fo/vpftwx7xbdto084b23dxg/AGp1Mu4vUoP8mkHuckIcUr4/CREDENZAS%20Y%20MESAS/200711%20MARCOS/IMG_2422.jpeg?rlkey=o19t1tlq2mykbo4u923fw4pkn&raw=1"
-    ]
+    ],
+    "thumb": "img/thumbs/credenzas-y-mesas-0.jpg"
    }
   ],
   "varios": []
